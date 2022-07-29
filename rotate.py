@@ -33,7 +33,7 @@ class Solution:
         temp = []
         for c in range(len(matrix)):
             row = []
-            for i in range(len(matrix)):
+            for i in range(len(matrix)-1, -1, -1):
                 row.append(matrix[i][c])
             temp.append(row)    
         return temp
